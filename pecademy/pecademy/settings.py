@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+   
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,4 +82,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL =  os.path.join(BASE_DIR, '/s/static/')
+
+TEMPLATE_DIRS = {
+    'templates'
+}
+
+#importante no qitar
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, "templates/static"),
+    )
+
+STATIC_ROOT = "/templates/static/"
