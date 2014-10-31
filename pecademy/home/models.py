@@ -14,7 +14,7 @@ class Productos
 
 class Social_media 
 
-class reseña
+class resena
 
 class politicas
 
